@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>一般提示</title>
+    <defs>
+        <linearGradient x1="109.321489%" y1="109.235107%" x2="-6.71600586%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F38A3C" offset="0%"></stop>
+            <stop stop-color="#F6A122" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8.24242424,0 C12.418278,0 16,3.581722 16,8.24242424 C16,12.418278 12.418278,16 8.24242424,16 C3.581722,16 0,12.418278 0,8.24242424 C0,3.581722 3.581722,0 8.24242424,0 Z M8,1 C4.13400675,1 1,4.13400675 1,8 C1,11.8659932 4.13400675,15 8,15 C11.8659932,15 15,11.8659932 15,8 C15,4.13400675 11.8659932,1 8,1 Z M9,6 L9,12 L10,12 L10,12.5 L6.5,12.5 L6.5,12 L7.5,12 L7.5,6.5 L6.5,6.5 L6.5,6 L9,6 Z M8,3 C8.55228475,3 9,3.44771525 9,4 C9,4.55228475 8.55228475,5 8,5 C7.44771525,5 7,4.55228475 7,4 C7,3.44771525 7.44771525,3 8,3 Z"
+              id="path-2"></path>
+    </defs>
+    <g id="一般提示" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Detail-Disclosure" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

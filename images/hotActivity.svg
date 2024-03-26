@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>九宫格-热门活动</title>
+    <g id="九宫格-热门活动" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组"
+           transform="translate(16.000000, 12.000000) rotate(-315.000000) translate(-16.000000, -12.000000) translate(7.000000, 0.000000)"
+           fill-rule="nonzero">
+            <path d="M9,0 L18,6 L18,24 L0,24 L0,6 L9,0 Z M9,2.404 L2,7.07 L2,21.999 L16,21.999 L16,7.071 L9,2.404 Z"
+                  id="矩形" fill="#221715"></path>
+            <path d="M9,7 C11.209139,7 13,8.790861 13,11 C13,13.209139 11.209139,15 9,15 C6.790861,15 5,13.209139 5,11 C5,8.790861 6.790861,7 9,7 Z M9,9 C7.8954305,9 7,9.8954305 7,11 C7,12.1045695 7.8954305,13 9,13 C10.1045695,13 11,12.1045695 11,11 C11,9.8954305 10.1045695,9 9,9 Z"
+                  id="椭圆形" fill="#FA2814"></path>
+        </g>
+    </g>
+</svg>

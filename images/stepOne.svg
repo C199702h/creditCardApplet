@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="70px" viewBox="0 0 375 70" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>申请信用卡_进度1</title>
+    <defs>
+        <linearGradient x1="89.2724153%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#221715" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="申请信用卡-新客户-01" transform="translate(0.000000, -64.000000)">
+            <g id="申请信用卡_进度1" transform="translate(0.000000, 64.000000)">
+                <polygon id="矩形" fill="#FFFFFF" points="0 0 375 0 375 70 0 70"></polygon>
+                <text id="个人信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#221715">
+                    <tspan x="24" y="58">个人信息</tspan>
+                </text>
+                <text id="工作信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                    <tspan x="114" y="58">工作信息</tspan>
+                </text>
+                <text id="联系人信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                    <tspan x="198" y="58">联系人信息</tspan>
+                </text>
+                <text id="卡片信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                    <tspan x="294" y="58">卡片信息</tspan>
+                </text>
+                <rect id="矩形" fill="#EDEDED" x="53" y="23" width="262" height="5"></rect>
+                <path d="M48.5,14 C53.992831,14 58.5862192,17.8509725 59.7275661,23.0003191 L144,23 L144,28 L59.7273445,28.0006801 C58.5856249,33.1495257 53.9924757,37 48.5,37 C42.1487254,37 37,31.8512746 37,25.5 C37,19.1487254 42.1487254,14 48.5,14 Z"
+                      id="合并形状" fill="url(#linearGradient-1)"></path>
+                <circle id="椭圆形-copy" fill="#EDEDED" cx="138.5" cy="25.5" r="11.5"></circle>
+                <circle id="椭圆形-copy-2" fill="#EDEDED" cx="228.5" cy="25.5" r="11.5"></circle>
+                <circle id="椭圆形-copy-3" fill="#EDEDED" cx="318.5" cy="25.5" r="11.5"></circle>
+                <polygon id="1" fill="#FFFFFF" fill-rule="nonzero"
+                         points="49.8671875 31 49.8671875 21.0332031 49.6621094 21.0332031 46.0322266 22.5166016 46.0322266 24.1298828 47.9257812 23.3984375 47.9257812 31"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

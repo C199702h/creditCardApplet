@@ -1,0 +1,341 @@
+/**
+ *  格式化成金额字段
+ * @param number  金额
+ * @param decimals  保留几位小数(默认保留2位，使用截取的方式)
+ * @param dec_point 小数点符号  
+ * @param thousands_sep  千分位符号 
+ * @returns {string}
+ */
+function money(number, decimals, dec_point, thousands_sep) {
+
+  if (!number) return number;
+  var str = ('' + number).replace(getRegExp(',', 'g'), '');
+
+  number = Number(str);
+  number = (number + '').replace(getRegExp('[^0-9+-Ee.]', 'g'), '');
+  var n = !isFinite(+number) ? 0 : number,
+    prec = !isFinite(+decimals) ? 2 : Math.abs(decimals),
+    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+    dec = (typeof dec_point === 'undefined') ? '.' : dec_point;
+
+  var s = ('' + n).split('.');
+  var re = getRegExp('(-?\d+)(\d{3})', '');
+  while (re.test(s[0])) {
+    s[0] = s[0].replace(re, "$1" + sep + "$2");
+  }
+
+  if ((s[1] || '').length < prec) {
+    s[1] = s[1] || '';
+    var a = [];
+    for (var i = 0; i < prec - s[1].length + 1; i++) {
+      a.push(null);
+    }
+    s[1] += a.join('0');
+  } else {
+    s[1] = s[1].substring(0, prec);
+  }
+  return s.join(dec);
+}
+
+function currency(ccyCode) {
+  if (ccyCode === 'AFA') return '阿富汗尼';
+  if (ccyCode === 'ALL') return '列克';
+  if (ccyCode === 'DZD') return '阿尔及利亚第纳尔';
+  if (ccyCode === 'ADP') return '安道尔比塞塔';
+  if (ccyCode === 'AZM') return '阿塞拜疆马纳特';
+  if (ccyCode === 'ARS') return '阿根廷比索';
+  if (ccyCode === 'AUD') return '澳大利亚元';
+  if (ccyCode === 'ATS') return '奥地利先令';
+  if (ccyCode === 'BSD') return '巴哈马元';
+  if (ccyCode === 'BHD') return '巴林第纳尔';
+  if (ccyCode === 'BDT') return '塔卡';
+  if (ccyCode === 'AMD') return '亚美尼亚德拉姆';
+  if (ccyCode === 'BBD') return '巴巴多斯元';
+  if (ccyCode === 'BEF') return '比利时法郎';
+  if (ccyCode === 'BMD') return '百慕大元';
+  if (ccyCode === 'BTN') return '不丹努扎姆';
+  if (ccyCode === 'BOB') return '玻利维亚玻利维亚诺';
+  if (ccyCode === 'BWP') return '普拉';
+  if (ccyCode === 'BZD') return '伯利兹元';
+  if (ccyCode === 'SBD') return '所罗门元';
+  if (ccyCode === 'BND') return '文莱元';
+  if (ccyCode === 'BGL') return '列弗';
+  if (ccyCode === 'MMK') return '缅甸元';
+  if (ccyCode === 'BIF') return '布隆迪法郎';
+  if (ccyCode === 'KHR') return '瑞尔';
+  if (ccyCode === 'CAD') return '加拿大元';
+  if (ccyCode === 'CVE') return '佛得角埃斯库多';
+  if (ccyCode === 'KYD') return '开曼元';
+  if (ccyCode === 'LKR') return '斯里兰卡卢比';
+  if (ccyCode === 'CLP') return '智利比索';
+  if (ccyCode === 'CNY') return '人民币';
+  if (ccyCode === 'COP') return '哥伦比亚比索';
+  if (ccyCode === 'KMF') return '科摩罗法郎';
+  if (ccyCode === 'CRC') return '哥斯达黎加科朗';
+  if (ccyCode === 'CUP') return '古巴可兑换比索';
+  if (ccyCode === 'CYP') return '塞浦路斯镑';
+  if (ccyCode === 'CZK') return '捷克克朗';
+  if (ccyCode === 'DKK') return '丹麦克朗';
+  if (ccyCode === 'DOP') return '多米尼加比索';
+  if (ccyCode === 'SVC') return '萨尔瓦多科朗';
+  if (ccyCode === 'ETB') return '比尔';
+  if (ccyCode === 'ERN') return '厄立特里亚纳克法';
+  if (ccyCode === 'EEK') return '爱沙尼亚克朗';
+  if (ccyCode === 'FKP') return '福克兰镑';
+  if (ccyCode === 'FJD') return '斐济元';
+  if (ccyCode === 'FIM') return '芬兰马克';
+  if (ccyCode === 'FRF') return '法郎';
+  if (ccyCode === 'DJF') return '吉布提法郎';
+  if (ccyCode === 'GMD') return '达拉西';
+  if (ccyCode === 'DEM') return '马克';
+  if (ccyCode === 'GHC') return '加纳塞地';
+  if (ccyCode === 'GIP') return '直布罗陀镑';
+  if (ccyCode === 'GRD') return '德拉马克';
+  if (ccyCode === 'GTQ') return '格查尔';
+  if (ccyCode === 'GNF') return '几内亚法郎';
+  if (ccyCode === 'GYD') return '圭亚那元';
+  if (ccyCode === 'HTG') return '海地古德';
+  if (ccyCode === 'HNL') return '伦皮拉';
+  if (ccyCode === 'HKD') return '港元';
+  if (ccyCode === 'HUF') return '福林';
+  if (ccyCode === 'ISK') return '冰岛克朗';
+  if (ccyCode === 'INR') return '卢比';
+  if (ccyCode === 'IDR') return '印尼盾';
+  if (ccyCode === 'IRR') return '伊朗里亚尔';
+  if (ccyCode === 'IRA') return '';
+  if (ccyCode === 'IQD') return '伊拉克第纳尔';
+  if (ccyCode === 'IEP') return '爱尔兰镑';
+  if (ccyCode === 'ILS') return '新谢克尔';
+  if (ccyCode === 'ITL') return '里拉';
+  if (ccyCode === 'JMD') return '牙买加元';
+  if (ccyCode === 'JPY') return '日元';
+  if (ccyCode === 'KZT') return '坚戈';
+  if (ccyCode === 'JOD') return '约旦第纳尔';
+  if (ccyCode === 'KES') return '肯尼亚先令';
+  if (ccyCode === 'KPW') return '圆';
+  if (ccyCode === 'KRW') return '韩元';
+  if (ccyCode === 'KWD') return '科威特第纳尔';
+  if (ccyCode === 'KGS') return '吉尔吉斯斯坦索姆';
+  if (ccyCode === 'LAK') return '基普';
+  if (ccyCode === 'LBP') return '黎巴嫩镑';
+  if (ccyCode === 'LSL') return '莱索托洛蒂';
+  if (ccyCode === 'LVL') return '拉脱维亚拉特';
+  if (ccyCode === 'LRD') return '利比里亚元';
+  if (ccyCode === 'LYD') return '利比亚第纳尔';
+  if (ccyCode === 'LTL') return '立陶宛立特';
+  if (ccyCode === 'LUF') return '卢森堡法郎';
+  if (ccyCode === 'MOP') return '澳门元';
+  if (ccyCode === 'MGF') return '';
+  if (ccyCode === 'MWK') return '克瓦查';
+  if (ccyCode === 'MYR') return '马来西亚林吉特';
+  if (ccyCode === 'MVR') return '罗非亚';
+  if (ccyCode === 'MTL') return '马耳他里拉';
+  if (ccyCode === 'MRO') return '乌吉亚';
+  if (ccyCode === 'MUR') return '毛里求斯卢比';
+  if (ccyCode === 'MXN') return '墨西哥比索';
+  if (ccyCode === 'MNT') return '蒙图';
+  if (ccyCode === 'MDL') return '摩尔多瓦列伊';
+  if (ccyCode === 'MAD') return '摩洛哥拉姆';
+  if (ccyCode === 'MZM') return '莫桑比克梅蒂卡尔';
+  if (ccyCode === 'OMR') return '阿曼里亚尔';
+  if (ccyCode === 'NAD') return '纳米比亚元';
+  if (ccyCode === 'NPR') return '尼泊尔卢比';
+  if (ccyCode === 'NLG') return '荷兰盾';
+  if (ccyCode === 'ANG') return '荷属安的列斯盾';
+  if (ccyCode === 'AWG') return '阿鲁巴弗罗林';
+  if (ccyCode === 'VUV') return '瓦努阿图瓦图';
+  if (ccyCode === 'NZD') return '新西兰元';
+  if (ccyCode === 'NIO') return '尼加拉瓜科多巴';
+  if (ccyCode === 'NGN') return '奈拉';
+  if (ccyCode === 'NOK') return '挪威克朗';
+  if (ccyCode === 'PKR') return '巴基斯坦卢比';
+  if (ccyCode === 'PAB') return '巴拿马巴波亚';
+  if (ccyCode === 'PGK') return '巴布亚新几内亚基纳';
+  if (ccyCode === 'PYG') return '巴拉圭瓜拉尼';
+  if (ccyCode === 'PEN') return '新索尔';
+  if (ccyCode === 'PHP') return '菲律宾比索';
+  if (ccyCode === 'PLZ') return '波兰兹罗提';
+  if (ccyCode === 'PTE') return '埃斯库多';
+  if (ccyCode === 'GWP') return '几内亚比索';
+  if (ccyCode === 'TPE') return '';
+  if (ccyCode === 'QAR') return '卡塔尔里亚尔';
+  if (ccyCode === 'ROL') return '列伊';
+  if (ccyCode === 'RUB') return '卢布';
+  if (ccyCode === 'RWF') return '卢旺达法郎';
+  if (ccyCode === 'SHP') return '圣赫勒拿镑';
+  if (ccyCode === 'STD') return '杜布拉';
+  if (ccyCode === 'SAR') return '亚尔';
+  if (ccyCode === 'SCR') return '塞舌尔卢比';
+  if (ccyCode === 'SLL') return '里昂';
+  if (ccyCode === 'SGD') return '新加坡元';
+  if (ccyCode === 'SKK') return '斯洛伐克克朗';
+  if (ccyCode === 'VND') return '越南盾';
+  if (ccyCode === 'SIT') return '托勒';
+  if (ccyCode === 'SOS') return '索马里先令';
+  if (ccyCode === 'ZAR') return '南特';
+  if (ccyCode === 'ZWD') return '津巴布韦元';
+  if (ccyCode === 'ESP') return '比塞塔';
+  if (ccyCode === 'SSD') return '南苏丹镑';
+  if (ccyCode === 'SDD') return '苏丹镑';
+  if (ccyCode === 'SDA') return '';
+  if (ccyCode === 'SRG') return '苏里南元';
+  if (ccyCode === 'SZL') return '斯威士兰里兰吉尼';
+  if (ccyCode === 'SEK') return '瑞典克朗';
+  if (ccyCode === 'CHF') return '瑞士法郎';
+  if (ccyCode === 'SYP') return '叙利亚镑';
+  if (ccyCode === 'THB') return '泰铢';
+  if (ccyCode === 'TOP') return '潘加';
+  if (ccyCode === 'TTD') return '千里达及托巴哥元';
+  if (ccyCode === 'AED') return '迪尔汗';
+  if (ccyCode === 'TND') return '突尼西亚第纳尔';
+  if (ccyCode === 'TRL') return '土耳其镑';
+  if (ccyCode === 'TMM') return '土库曼斯坦马纳特';
+  if (ccyCode === 'UGX') return '乌干达先令';
+  if (ccyCode === 'MKD') return '前南马其顿代纳尔';
+  if (ccyCode === 'RUR') return '';
+  if (ccyCode === 'EGP') return '埃及镑';
+  if (ccyCode === 'GBP') return '英镑';
+  if (ccyCode === 'TZS') return '坦桑尼亚先令';
+  if (ccyCode === 'USD') return '美元';
+  if (ccyCode === 'UYU') return '乌拉圭比索';
+  if (ccyCode === 'UZS') return '苏姆';
+  if (ccyCode === 'VEB') return '博利瓦';
+  if (ccyCode === 'WST') return '萨摩亚塔拉';
+  if (ccyCode === 'YER') return '也门里亚尔';
+  if (ccyCode === 'YUM') return '南斯拉夫第纳尔';
+  if (ccyCode === 'ZMK') return '克瓦查';
+  if (ccyCode === 'TWD') return '新台币';
+  if (ccyCode === 'MRU') return '乌吉亚';
+  if (ccyCode === 'BYN') return '白俄罗斯卢布';
+  if (ccyCode === 'TMT') return '';
+  if (ccyCode === 'GHS') return '塞地';
+  if (ccyCode === 'VEF') return '';
+  if (ccyCode === 'RSD') return '塞尔维亚第纳尔';
+  if (ccyCode === 'MZN') return '莫桑比克梅蒂卡尔';
+  if (ccyCode === 'AZN') return '';
+  if (ccyCode === 'RON') return '列伊';
+  if (ccyCode === 'TRY') return '土耳其里拉';
+  if (ccyCode === 'XAF') return '中非法郎';
+  if (ccyCode === 'XCD') return '东加勒比元';
+  if (ccyCode === 'XOF') return '非洲法郎';
+  if (ccyCode === 'XPF') return '太平洋法郎';
+  if (ccyCode === 'XDR') return '特别提款权';
+  if (ccyCode === 'MGA') return '阿里亚里';
+  if (ccyCode === 'AFN') return '阿富汗尼';
+  if (ccyCode === 'TJS') return '塔吉克斯坦索莫尼';
+  if (ccyCode === 'AOA') return '安哥拉宽扎';
+  if (ccyCode === 'BYR') return '白俄罗斯卢布（旧）';
+  if (ccyCode === 'BGN') return '保加利亚列弗';
+  if (ccyCode === 'CDF') return '刚果法郎';
+  if (ccyCode === 'BAM') return '波斯尼亚和黑塞哥维那可兑换马克';
+  if (ccyCode === 'EUR') return '欧元';
+  if (ccyCode === 'MXV') return '墨西哥';
+  if (ccyCode === 'UAH') return '乌克兰格里夫尼亚';
+  if (ccyCode === 'GEL') return '格鲁吉亚拉里';
+  if (ccyCode === 'BOV') return '玻利维亚mvdol';
+  if (ccyCode === 'PLN') return '兹罗提';
+  if (ccyCode === 'BRL') return '雷亚尔';
+  if (ccyCode === 'CLF') return '智利比索';
+  if (ccyCode === 'USN') return '美元';
+  if (ccyCode === 'USS') return '美元';
+}
+
+function rateCeil(val) {
+  return Math.ceil(val * 100) / 100;
+}
+
+function rateCeil2(val) {
+  if (!val) return val;
+  var nums =  val.split('.');
+  //为整数 或者已是两位小数
+  if (!nums||nums.length<2||nums[1].length<=2){
+    return val;
+  }
+  //小数点后超过两位 除0外 直接全入
+  if (nums[1].length>=3&&nums[1].indexOf(2)=='0') {
+    return Math.floor(val*100)/100;
+  } else {
+    return Math.ceil(val*100)/100;
+  }
+}
+
+//优惠券显示整数 eg：6折
+function discountFilter(discount) {
+  var disSplit = discount.toString().split('.');
+  var discountShow = '';
+  if (disSplit.length == 2) {
+    var decPlace = disSplit[1];
+    if (decPlace.length == 1) {
+      discountShow = decPlace;
+    } else {
+      discountShow = decPlace.substring(0, 1) + '.' +
+        decPlace.substring(1, decPlace.length);
+    }
+  }
+  return discountShow || discount;
+}
+
+function gender(val){
+  if(!val) return;
+  return val=="M"?"先生":"女士";
+}
+
+function cardNo (no){
+  if(!no) return no;
+  return no.slice(0, 4) + ' **** **** ' + no.slice(-4);
+}
+
+function merchant(text){
+  if(!text) return '其他';
+  if(text.length > 13){
+    return text.substring(0, 13) + '...';
+  }
+  return text;
+}
+
+/**
+ * 截取指定长度字符串
+ * @param str 字符串
+ * @param len 长度
+ */
+function subByLen (str, len){
+  if(!str) return str;
+  return str.substring(0, len);
+}
+
+/**
+ * 商圈分类
+ * @param val 
+ */
+function shopType(val){
+  if(val=='01'){
+    return "美食餐饮"
+  }else if(val=='02'){
+    return "便利店"
+  }else if(val=='03'){
+    return "商场超市"
+  }else if(val=="04"){
+    return "休闲娱乐"
+  }else if(val=="05"){
+    return "生活服务"
+  }
+}
+
+function distance(val){
+  if(parseFloat(val) >= 1) return parseFloat(val).toFixed(2) + 'km';
+  if(parseFloat(val) < 1) return Math.round((parseFloat(val)*1000)) + 'm';
+}
+
+module.exports = {
+  money: money,
+  currency:currency,
+  rateCeil: rateCeil,
+  rateCeil2: rateCeil2,
+  discountFilter: discountFilter,
+  gender: gender,
+  cardNo: cardNo,
+  merchant: merchant,
+  subByLen: subByLen,
+  shopType: shopType,
+  distance: distance
+}

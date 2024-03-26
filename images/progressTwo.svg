@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="123px" viewBox="0 0 375 123" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>申请信用卡_进度2</title>
+    <defs>
+        <linearGradient x1="89.2724153%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#221715" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="【微信小程序】线下信用卡预约" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="申请进度-进度（已完成）备份" transform="translate(0.000000, -114.000000)">
+            <g id="申请信用卡_进度2" transform="translate(0.000000, 114.000000)">
+                <polygon id="矩形" fill="#FFFFFF" points="0 0 375 0 375 123 0 123"></polygon>
+                <text id="申请已受理-待审批" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#221715">
+                    <tspan x="18" y="74">申请已受理</tspan>
+                    <tspan x="30.4" y="90">待审批</tspan>
+                </text>
+                <text id="审批中" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#221715">
+                    <tspan x="120" y="74">审批中</tspan>
+                </text>
+                <text id="审批完成" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                    <tspan x="204" y="74">审批完成</tspan>
+                </text>
+                <text id="审批通过-制卡成功" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                      line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                    <tspan x="294" y="74">审批通过</tspan>
+                    <tspan x="294" y="90">制卡成功</tspan>
+                </text>
+                <rect id="矩形" fill="#EDEDED" x="53" y="39" width="262" height="5"></rect>
+                <circle id="椭圆形" fill="#221715" cx="48.5" cy="41.5" r="11.5"></circle>
+                <polygon id="矩形" fill="#EDEDED" points="57 39 319 39 319 44 57 44"></polygon>
+                <polygon id="矩形" fill="#221715" points="50 39 139 39 139 44 50 44"></polygon>
+                <polygon id="矩形" fill="url(#linearGradient-1)" points="139 39 229 39 229 44 139 44"></polygon>
+                <circle id="椭圆形-copy" fill="#221715" cx="138.5" cy="41.5" r="11.5"></circle>
+                <circle id="椭圆形-copy-2" fill="#EDEDED" cx="228.5" cy="41.5" r="11.5"></circle>
+                <circle id="椭圆形-copy-3" fill="#EDEDED" cx="318.5" cy="41.5" r="11.5"></circle>
+                <polygon id="1" fill="#FFFFFF" fill-rule="nonzero"
+                         points="49.8671875 47 49.8671875 37.0332031 49.6621094 37.0332031 46.0322266 38.5166016 46.0322266 40.1298828 47.9257812 39.3984375 47.9257812 47"></polygon>
+                <path d="M141.973633,47 L141.973633,45.3935547 L138.589844,45.3935547 L139.868164,43.5683594 C140.159831,43.2220052 140.421875,42.8904622 140.654297,42.5737305 C140.886719,42.2569987 141.083822,41.9436849 141.245605,41.6337891 C141.407389,41.3238932 141.531576,41.0128581 141.618164,40.7006836 C141.704753,40.3885091 141.748047,40.0660807 141.748047,39.7333984 C141.748047,39.2958984 141.687663,38.9016927 141.566895,38.5507812 C141.446126,38.1998698 141.267253,37.9036458 141.030273,37.6621094 C140.793294,37.4205729 140.500488,37.2348633 140.151855,37.1049805 C139.803223,36.9750977 139.401042,36.9101562 138.945312,36.9101562 C138.480469,36.9101562 138.062337,36.9967448 137.690918,37.1699219 C137.319499,37.343099 137.005046,37.5777995 136.747559,37.8740234 C136.490072,38.1702474 136.291829,38.5166016 136.152832,38.9130859 C136.013835,39.3095703 135.944336,39.7333984 135.944336,40.1845703 L135.944336,40.1845703 L137.885742,40.1845703 C137.885742,39.9475911 137.90625,39.7265625 137.947266,39.5214844 C137.988281,39.3164062 138.052083,39.1398112 138.138672,38.9916992 C138.22526,38.8435872 138.332357,38.7273763 138.459961,38.6430664 C138.587565,38.5587565 138.737956,38.5166016 138.911133,38.5166016 C139.198242,38.5166016 139.418132,38.6419271 139.570801,38.8925781 C139.72347,39.1432292 139.799805,39.4895833 139.799805,39.9316406 C139.799805,40.077474 139.783854,40.2278646 139.751953,40.3828125 C139.720052,40.5377604 139.665365,40.7063802 139.587891,40.8886719 C139.510417,41.0709635 139.407878,41.2703451 139.280273,41.4868164 C139.152669,41.7032878 138.993164,41.9436849 138.801758,42.2080078 L138.801758,42.2080078 L136.108398,45.6328125 L136.108398,47 L141.973633,47 Z"
+                      id="2" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

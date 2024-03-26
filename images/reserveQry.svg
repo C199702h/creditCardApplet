@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>预约办卡查询</title>
+    <g id="预约办卡查询" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#221715" x="2" y="4" width="2" height="20"></rect>
+        <rect id="矩形备份" fill="#221715" x="24" y="4" width="2" height="7"></rect>
+        <rect id="矩形" fill="#221715" x="2" y="4" width="5" height="2"></rect>
+        <rect id="矩形备份-5" fill="#221715"
+              transform="translate(9.000000, 5.000000) rotate(-90.000000) translate(-9.000000, -5.000000) " x="7" y="4"
+              width="4" height="2"></rect>
+        <rect id="矩形备份-6" fill="#221715"
+              transform="translate(19.000000, 5.000000) rotate(-90.000000) translate(-19.000000, -5.000000) " x="17"
+              y="4" width="4" height="2"></rect>
+        <rect id="矩形备份-4" fill="#221715" x="21" y="4" width="5" height="2"></rect>
+        <rect id="矩形备份-7" fill="#221715" x="11" y="4" width="6" height="2"></rect>
+        <rect id="矩形备份-2" fill="#221715" x="2" y="22" width="11" height="2"></rect>
+        <rect id="矩形" fill="#FA2814" x="6" y="9" width="14" height="2"></rect>
+        <rect id="矩形备份-3" fill="#FA2814" x="6" y="13" width="9" height="2"></rect>
+        <rect id="矩形备份-8" fill="#FA2814" x="6" y="17" width="7" height="2"></rect>
+        <path d="M19.5,14 C21.9852814,14 24,16.0147186 24,18.5 C24,19.2802861 23.8014038,20.0141875 23.4520001,20.6539156 L26.0578987,22.8409246 L24.7723235,24.3730135 L22.1270073,22.1540196 C21.3878033,22.686397 20.4805246,23 19.5,23 C17.0147186,23 15,20.9852814 15,18.5 C15,16.0147186 17.0147186,14 19.5,14 Z M19.5,16 C18.1192881,16 17,17.1192881 17,18.5 C17,19.8807119 18.1192881,21 19.5,21 C20.8807119,21 22,19.8807119 22,18.5 C22,17.1192881 20.8807119,16 19.5,16 Z"
+              id="形状结合备份" fill="#221715"></path>
+    </g>
+</svg>

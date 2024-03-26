@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="123px" viewBox="0 0 375 123" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>申请信用卡_进度1</title>
+    <defs>
+        <linearGradient x1="89.2724153%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#221715" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="【微信小程序】线下信用卡预约" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="申请进度-进度（未完成）" transform="translate(0.000000, -114.000000)">
+            <g id="申请信用卡_进度1" transform="translate(0.000000, 114.000000)">
+                <polygon id="矩形" fill="#FFFFFF" points="0 0 375 0 375 123 0 123"></polygon>
+                <g id="编组" transform="translate(18.000000, 30.000000)">
+                    <text id="申请已受理-待审批" font-family="PingFangSC-Regular, PingFang SC" font-size="12"
+                          font-weight="normal" line-spacing="16" letter-spacing="0.4" fill="#221715">
+                        <tspan x="0" y="44">申请已受理</tspan>
+                        <tspan x="12.4" y="60">待审批</tspan>
+                    </text>
+                    <text id="审批中" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                          line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                        <tspan x="102" y="44">审批中</tspan>
+                    </text>
+                    <text id="审批完成" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal"
+                          line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                        <tspan x="186" y="44">审批完成</tspan>
+                    </text>
+                    <text id="审批通过-制卡成功" font-family="PingFangSC-Regular, PingFang SC" font-size="12"
+                          font-weight="normal" line-spacing="16" letter-spacing="0.4" fill="#AAAAAA">
+                        <tspan x="276" y="44">审批通过</tspan>
+                        <tspan x="276" y="60">制卡成功</tspan>
+                    </text>
+                    <rect id="矩形" fill="#EDEDED" x="35" y="9" width="262" height="5"></rect>
+                    <path d="M30.5,0 C35.992831,0 40.5862192,3.85097254 41.7275661,9.00031913 L126,9 L126,14 L41.7273445,14.0006801 C40.5856249,19.1495257 35.9924757,23 30.5,23 C24.1487254,23 19,17.8512746 19,11.5 C19,5.14872538 24.1487254,0 30.5,0 Z"
+                          id="合并形状" fill="url(#linearGradient-1)"></path>
+                    <circle id="椭圆形-copy" fill="#EDEDED" cx="120.5" cy="11.5" r="11.5"></circle>
+                    <circle id="椭圆形-copy-2" fill="#EDEDED" cx="210.5" cy="11.5" r="11.5"></circle>
+                    <circle id="椭圆形-copy-3" fill="#EDEDED" cx="300.5" cy="11.5" r="11.5"></circle>
+                </g>
+                <polygon id="1" fill="#FFFFFF" fill-rule="nonzero"
+                         points="49.8349609 46.9667969 49.8349609 37 49.6298828 37 46 38.4833984 46 40.0966797 47.8935547 39.3652344 47.8935547 46.9667969"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
